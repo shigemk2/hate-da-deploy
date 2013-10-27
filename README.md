@@ -1,4 +1,4 @@
-hatena-diary
+hate-da-deploy
 ===============
 
 はてなダイアリーの自動デプロイツール。
@@ -16,10 +16,31 @@ hatena-diary
 
 ### 導入
 
-1. hatena.yaml.sampleを参考に、hatena.yamlに必要な情報を書く
-2. ヘッダーのHTMLをhatena-header.htmlに、フッターのHTMLをhatena-footer.htmlに、CSSをhatena.cssに書き、直下のディレクトリに配置する
+1 hatena.yaml.sampleを参考に、hatena.yamlに必要な情報を書く
 
-1と2をやったあとに、以下を実行する。
+例
+```yaml
+user_id ユーザー名
+password パスワード
+top_url https://d.hatena.ne.jp/shigemk2
+login_url: https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fshigemk2%2F&add_timestamp=1
+detail_url: http://d.hatena.ne.jp/shigemk2/designdetail
+```
+
+## リンクの取り方
+
+○のついているところで右クリック→「リンクアドレスをコピー」
+
+ログインページ
+![ログイン](images/login.jpeg)
+
+デザイン編集ページ(管理ページから)
+![デザイン](images/detail.jpeg)
+
+
+2 ヘッダーのHTMLをhatena-header.htmlに、フッターのHTMLをhatena-footer.htmlに、CSSをhatena.cssに書き、直下のディレクトリに配置する
+
+必要なファイルを用意したあとに、以下を実行する
 
 
 ```zsh
