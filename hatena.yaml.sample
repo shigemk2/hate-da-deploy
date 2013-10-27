@@ -1,0 +1,5 @@
+user_id: ユーザーID
+password: パスワード
+top_url: トップページのURL
+login_url: ログインページのURL
+detail_url: 詳細デザイン編集ページ
